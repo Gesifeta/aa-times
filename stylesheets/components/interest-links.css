@@ -1,1 +1,42 @@
 /* Your code here */
+.interests-bar{
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr .75fr ;
+    grid-template-rows: [row1] 110px auto;
+    border: 1px solid 
+    black ;
+    border-right: none;
+    border-left: none;
+    align-items: center;
+    justify-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    column-gap: 10px;
+}
+.interests-bar__image{
+    margin: 5px;
+}
+.interests-bar__head-lines{
+    line-height: 1.5;
+    border-right: 1px solid #e2e2e2;
+    align-self: flex-start;
+}
+.interests-bar__price {
+    display: grid;
+    grid-template-columns:50% 50%;
+    align-self: center;
+    justify-self: stretch;
+    line-height: 1.5;
+    color: green;
+    font-weight: bold;
+}
+.interests-bar__price p{
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+}
+.interests-bar__head-lines p{
+    font-weight: bold;
+}
+.temp{
+    font-weight: bold;
+}

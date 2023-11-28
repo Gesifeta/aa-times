@@ -1,1 +1,18 @@
 /* Your code here */
+.nav{
+    display: flex;
+    line-height: 12px;
+   margin-top: 15px ;
+   justify-content: center;
+   font-weight: 700;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+li{
+    display: inline;
+    margin-right: 10px;
+}

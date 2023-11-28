@@ -4,12 +4,12 @@ window.addEventListener('DOMContentLoaded', () => {
   cogIcon.addEventListener('click', event => {
     console.log('Gear clicked');
     event.stopPropagation();
-    document.querySelector('.pref').classList.remove('pref--hidden');
+    document.querySelector('.pref').classList.toggle('pref--hidden');
   });
 
   window.addEventListener('click', () => {
     console.log('HTML document clicked');
-    document.querySelector('.pref').classList.add('pref--hidden');
+    document.querySelector('.pref').classList.remove('pref--hidden');
   });
 
   const searchIcon = document.querySelector('.fa.fa-search');

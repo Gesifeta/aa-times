@@ -1,4 +1,5 @@
 .pref {
+  display: none;
   background-color: white;
   border: 1px solid #efefef;
   border-radius: 2px;
@@ -6,12 +7,14 @@
   font-size: 12px;
   padding: 0.5em;
   position: absolute;
-  right: 5px;
-  top: 2.5em;
+  right: 10px;
+  top: 3.5em;
   width: 200px;
 }
 
-
+.pref--hidden{
+  display: block;
+}
 .pref__section {
   border-top: 1px solid #dedede;
 }
@@ -27,6 +30,8 @@
 }
 
 .pref__section-link {
+  display: flex;
+  flex-direction: column;
   margin: .5em;
   padding: .5em;
   text-transform: uppercase;

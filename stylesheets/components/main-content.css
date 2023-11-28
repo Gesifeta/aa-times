@@ -1,1 +1,115 @@
 /* Your code here */
+.article{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 5px;
+}
+.article-main{
+    display: flex;
+    flex-direction: column;
+    
+}
+.article-main__story{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    padding-bottom: 100px;
+    justify-content: stretch;
+}
+.article-main__story--content-video{
+    align-items: start;
+}
+.article-main__story--content-video-warning{
+    text-align: center;
+}
+.article-main__headline{
+    margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: bold;
+}
+.article-main__story--content-tittle{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.article-main__story--content ul li{
+
+        list-style: disc outside none;
+        display: list-item;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    
+}
+.article-main__story--content-by{
+    padding-bottom: 5px;
+    opacity: .5;
+  
+  
+}
+.article-main__info{
+    display: grid;
+    column-gap: 10px;
+    padding-right:10px ;
+    grid-template-columns: 2fr 3fr;
+        border: 1px solid rgba(0, 0, 0, 0.808);
+        border-left: none;
+        border-right: none;
+        align-content: center;
+    
+}
+.article-main__info--career{
+    border-right: 1px solid #e2e2e2;
+}
+.article-oppinion{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e2e2e2;
+    padding-left: 10px;
+   
+
+}
+.article-oppinion__main{
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+  
+}
+.article-operations__image{
+    margin: 12px 0px;
+    height: 100px;
+}
+.trending{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: stretch;
+}
+.trending__author{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+.article a{
+    color: blue;
+    margin: 12px 0px;
+}
+
+@media screen and (max-width:1200px) {
+    .nav-main{
+        display: none;
+    }
+    .interests-bar{
+        border-top: none;
+    }
+    
+    
+}
+@media screen and (max-width:1000px) {
+    .interests-bar{
+        display: none;
+    }
+    
+}
